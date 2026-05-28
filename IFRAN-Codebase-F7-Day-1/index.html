@@ -29,81 +29,27 @@
                 </div>
 
                 <div class="page-content">
-                    <!-- =====================================================
-               SÉANCE 1 : afficher ici une liste de tâches EN DUR
-                 (composant "list" avec des cases à cocher). -->
+                    <!-- saisie d'une tache, champ + button -->
                     <div class="list">
                         <ul>
-                            <li class="item-content">
-                                <div class="item-media">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        <i class="icon-checkbox"></i>
-                                    </label>
-                                </div>
+                            <li class="item-content item-input">
                                 <div class="item-inner">
-                                    <div class="item-title">Réviser l'algorithmique</div>
+                                    <div class="item-input-wrap">
+                                        <input type="text" id="saisie-tache" placeholder="Nouvelle tâche…">
+                                    </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="list">
-                        <ul>
-                            <li class="item-content">
-                                <div class="item-media">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        <i class="icon-checkbox"></i>
-                                    </label>
-                                </div>
-                                <div class="item-inner">
-                                    <div class="item-title">terminer le tp</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div><div class="list">
-                        <ul>
-                            <li class="item-content">
-                                <div class="item-media">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        <i class="icon-checkbox"></i>
-                                    </label>
-                                </div>
-                                <div class="item-inner">
-                                    <div class="item-title">Réviser pour l'examen</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div><div class="list">
-                        <ul>
-                            <li class="item-content">
-                                <div class="item-media">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        <i class="icon-checkbox"></i>
-                                    </label>
-                                </div>
-                                <div class="item-inner">
-                                    <div class="item-title">Faire la session 3</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div><div class="list">
-                        <ul>
-                            <li class="item-content">
-                                <div class="item-media">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        <i class="icon-checkbox"></i>
-                                    </label>
-                                </div>
-                                <div class="item-inner">
-                                    <div class="item-title">Terminer le projet</div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="block">
+                        <a href="#" class="button button-fill" id="btn-ajouter">Ajouter</a>
                     </div>
+
+                    <!-- Liste des taches, remplie a partir du tableau dans le JS-->
+                    <div class="list">
+                        <ul class="liste-taches"></ul>
+                    </div>
+
                     <!-- SÉANCE 2 : ajouter un champ + un bouton, puis
                  générer la liste à partir d'un tableau JS
                  (voir js/app.js). Ajouter / supprimer une tâche.
