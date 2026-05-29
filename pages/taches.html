@@ -1,0 +1,55 @@
+<div class="page" data-name="taches">
+    <!-- Barre de navigation (haut) -->
+    <div class="navbar">
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner">
+            <div class="title title-bold">My ToDo App</div>
+        </div>
+    </div>
+
+    <!-- Barre d'onglets -->
+    <div class="toolbar tabbar toolbar-bottom">
+        <div class="toolbar-inner">
+            <a href="/" class="tab-link">
+                <span class="tabbar-label">Accueil</span>
+            </a>
+            <a href="/taches/" class="tab-link tab-link-active">
+                <span class="tabbar-label">Taches</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <!-- Saisie d'une taches, champ + button  -->
+        <div class="list">
+            <ul>
+                <li class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-input-wrap">
+                            <input
+                                type="text"
+                                id="saisie-tache"
+                                placeholder="Nouvelle tâche…"
+                            />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="block">
+            <a href="#" class="button button-fill" id="btn-ajouter">
+                Ajouter
+            </a>
+        </div>
+
+        <!-- Liste des taches, remplie a partir du tableau tache dans le JS  -->
+        <div class="list">
+            <ul class="liste-taches"></ul>
+        </div>
+
+        <!-- =====================================================
+        SÉANCE 3 : cocher/décocher, compteur, filtres,
+            puis sauvegarde avec localStorage.
+        ===================================================== -->
+    </div>
+</div>
