@@ -26,11 +26,7 @@
                 <li class="item-content item-input">
                     <div class="item-inner">
                         <div class="item-input-wrap">
-                            <input
-                                type="text"
-                                id="saisie-tache"
-                                placeholder="Nouvelle tâche…"
-                            />
+                            <input type="text" id="saisie-tache" placeholder="Nouvelle tâche…" />
                         </div>
                     </div>
                 </li>
@@ -42,14 +38,29 @@
             </a>
         </div>
 
+        <!-- Filtres -->
+        <div class="block">
+            <div class="segmented">
+                <button class="button filtre-btn button-active">Toutes
+                </button>
+                <button class="button filtre-btn" data-filtre="afaire">
+                    A faire
+                </button>
+                <button class="button filtre-btn" data-filtre="faites">
+                    Faites
+                </button>
+            </div>
+        </div>
+
         <!-- Liste des taches, remplie a partir du tableau tache dans le JS  -->
         <div class="list">
             <ul class="liste-taches"></ul>
         </div>
 
-        <!-- =====================================================
-        SÉANCE 3 : cocher/décocher, compteur, filtres,
-            puis sauvegarde avec localStorage.
-        ===================================================== -->
+        <div class="block">
+            <p class="compteur">0 tâche(s) restante(s)</p>
+        </div>
+
+    
     </div>
 </div>

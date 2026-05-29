@@ -2,16 +2,123 @@
    Ma ToDo — styles de l'application
    ============================================================ */
 
-/* Couleur principale du thème (orange) */
 :root {
-    --f7-theme-color: #e8590c;
-    --f7-theme-color-rgb: 232, 89, 12;
-    --f7-theme-color-shade: #cf5009;
-    --f7-theme-color-tint: #f06a1e;
+    --f7-theme-color: #b89b84;
+    --f7-theme-color-rgb: 184,155,132;
+    --f7-theme-color-shade: #a28672;
+    --f7-theme-color-tint: #ceb6a4;
 }
 
-.page-content {
-    padding-bottom: 16px;
+/* Fond général */
+body{
+    background-color: #f8f4ef;
+    font-family: Arial, sans-serif;
 }
 
-/* SÉANCE 3 : ajouter ici le style de la tâche cochée (texte barré) */
+/* Barre du haut */
+.navbar{
+    background-color: #efe6dd !important;
+}
+
+.navbar-bg{
+    background-color: #efe6dd !important;
+}
+
+.navbar .title{
+    color: #7d6858 !important;
+    font-weight: bold;
+}
+
+/* Barre du bas */
+.toolbar{
+    background-color: #efe6dd !important;
+}
+
+.toolbar-bg{
+    background-color: #efe6dd !important;
+}
+
+/* Texte des onglets */
+.tab-link{
+    color: #7d6858 !important;
+}
+
+.tab-link-active{
+    color: #a28672 !important;
+    font-weight: bold;
+}
+
+/* Contenu */
+.page-content{
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+/* Cartes / blocs */
+.block,
+.list{
+    background-color: #fffdfb;
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 0 3px 10px rgba(90,70,50,0.08);
+    margin-bottom: 18px;
+}
+
+/* Inputs */
+input{
+    background-color: #f3ece4 !important;
+    border-radius: 14px !important;
+    padding: 12px !important;
+}
+
+/* Boutons */
+.button{
+    border-radius: 14px !important;
+    font-weight: 500;
+}
+
+/* Filtres */
+.segmented{
+    gap: 8px;
+}
+
+.segmented .button{
+    background-color: #efe6dd;
+    color: #7d6858;
+}
+
+.button-active{
+    background-color: #b89b84 !important;
+    color: white !important;
+}
+
+/* Liste */
+.item-content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Tâche terminée */
+.tache-faite{
+    text-decoration: line-through;
+    color: #aaa29a;
+}
+
+/* Compteur */
+.compteur{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8a7260;
+}
+
+/* Supprimer */
+.btn-suppr{
+    color: #b97979;
+}
+
+/* Checkbox */
+.checkbox{
+    transform: scale(1.15);
+}
