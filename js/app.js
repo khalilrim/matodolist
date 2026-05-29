@@ -10,6 +10,7 @@ var app = new Framework7({
     name: 'MaToDo',
     theme: 'auto',
     routes: routes,
+    baseUrl: '/matodolist',
 });
 
 var mainView = app.views.create('.view-main', { url: '/' });
